@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Revisao{
+    public static void main(String[] args){
+     Scanner input = new Scanner(System.in); /*new significa que estamos criando um novo objeto*/
+
+     System.out.print("Digite seu nome: ");
+     String nome = input.nextLine();
+
+     System.out.print("Digite sua idade: ");
+     String idade = input.nextLine();
+     Integer idadeInt = Integer.parseInt(idade);
+     int resultado = soma(idadeInt, idadeInt);
+
+     System.out.print("Digite seu curso: ");
+     String curso = input.nextLine();
+
+     System.out.print("Digite sua nota: ");
+     double nota = input.nextDouble();
+
+     System.out.printf("Seu nome é %s, do curso %s, vai completar %d anos e sua última nota foi %.1f pontos", nome, curso, resultado, nota);
+    }
+
+    public static int soma(int x, int y){
+        return x + y;
+    }
+}
