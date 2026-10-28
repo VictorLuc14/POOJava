@@ -1,3 +1,5 @@
+package Combate;
+
 public class Personagem {
     private String nome;
     private int vida;

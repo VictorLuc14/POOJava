@@ -1,3 +1,5 @@
+package Combate;
+
 public class Guerreiro extends Personagem{
     private int bonusEspada;
 

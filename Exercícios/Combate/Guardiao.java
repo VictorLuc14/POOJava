@@ -1,3 +1,5 @@
+package Combate;
+
 public class Guardiao extends Personagem{
     private int armadura;
 
@@ -10,8 +12,9 @@ public class Guardiao extends Personagem{
 
     @Override
     public void receberDano(int dano) {
-        if (dano>0)
-        super.receberDano(dano);
+        if (dano>0 && dano>getArmadura()){
+            super.receberDano(dano-getArmadura());
+        }
     }
 
     public int getArmadura() {
